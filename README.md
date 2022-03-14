@@ -13,5 +13,7 @@ Au fost implementate următoarele implementări:
     - gap bazat pe șirul lui Tokuda
     - gap bazat pe șirul lui Sedgewick, apărut în 1982
   - BubbleSort
+  
+  
   În input.txt avem pe prima linie numărul de teste, N, în cazul nostru 8,iar pe următoarele N linii avem perechi de tipul (n, max), unde n este numărul de elemente pentru vectorul ce urmează a fi sortat, iar max este practic cea mai mare valoare pe care un element din vector îl poate lua.
   În cadrul proiectului m-am folosit de 8 teste care puneau valori randomizate, cu n și max încadrându-se în tipul de date int.
