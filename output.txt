@@ -1,0 +1,122 @@
+TEST 1 :n = 1000 maxx = 100000
+Sortarea din STL: CORECT- Timpul de rulare: 0.000000000 secunde
+HeapSort: CORECT- Timpul de rulare: 0.000000000 secunde
+MergeSort: CORECT- Timpul de rulare: 0.001499000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.001067000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 0.000436000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 0.000000000 secunde
+BubbleSort: CORECT- Timpul de rulare: 0.005003000 secunde
+
+TEST 2 :n = 100 maxx = 1010000
+Sortarea din STL: CORECT- Timpul de rulare: 0.000000000 secunde
+HeapSort: CORECT- Timpul de rulare: 0.000000000 secunde
+MergeSort: CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.000470000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 0.000000000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 0.000000000 secunde
+BubbleSort: CORECT- Timpul de rulare: 0.000000000 secunde
+
+TEST 3 :n = 100000 maxx = 10000000
+Sortarea din STL: CORECT- Timpul de rulare: 0.051014000 secunde
+HeapSort: CORECT- Timpul de rulare: 0.095814000 secunde
+MergeSort: CORECT- Timpul de rulare: 0.174762000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 0.020625000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.007721000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.009169000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.009613000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 0.059266000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 0.033432000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 0.058470000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 0.055618000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 0.036466000 secunde
+BubbleSort: CORECT- Timpul de rulare: 46.637926000 secunde
+
+TEST 4 :n = 10000 maxx = 10000000
+Sortarea din STL: CORECT- Timpul de rulare: 0.002058000 secunde
+HeapSort: CORECT- Timpul de rulare: 0.003351000 secunde
+MergeSort: CORECT- Timpul de rulare: 0.008044000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 0.002032000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.000000000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.000997000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 0.003029000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 0.002036000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 0.003244000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 0.006000000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 0.002030000 secunde
+BubbleSort: CORECT- Timpul de rulare: 0.436429000 secunde
+
+TEST 5 :n = 10000000 maxx = 10000
+Sortarea din STL: CORECT- Timpul de rulare: 2.497902000 secunde
+HeapSort: CORECT- Timpul de rulare: 7.244939000 secunde
+MergeSort: CORECT- Timpul de rulare: 10.756678000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 1.302500000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.580938000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.589721000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.616371000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 7.293897000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 3.460905000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 6.674033000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 6.375286000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 3.314334000 secunde
+BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul
+De fapt dureaza ani sa faca sortarea
+
+TEST 6 :n = 100000 maxx = 10000
+Sortarea din STL: CORECT- Timpul de rulare: 0.020047000 secunde
+HeapSort: CORECT- Timpul de rulare: 0.039377000 secunde
+MergeSort: CORECT- Timpul de rulare: 0.091127000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 0.013035000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.005000000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.005560000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.006007000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 0.044171000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 0.028134000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 0.037033000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 0.038578000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 0.027358000 secunde
+BubbleSort: CORECT- Timpul de rulare: 49.216716000 secunde
+
+TEST 7 :n = 10000000 maxx = 1000
+Sortarea din STL: CORECT- Timpul de rulare: 2.354074000 secunde
+HeapSort: CORECT- Timpul de rulare: 5.559810000 secunde
+MergeSort: CORECT- Timpul de rulare: 10.612691000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 1.092042000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 0.584539000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 0.612344000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 0.590535000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 5.408488000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 2.810687000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 4.269927000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 4.621199000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 2.708518000 secunde
+BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul
+De fapt dureaza ani sa faca sortarea
+
+TEST 8 :n = 100000000 maxx = 1000000
+Sortarea din STL: CORECT- Timpul de rulare: 30.507558000 secunde
+HeapSort: CORECT- Timpul de rulare: 114.636287000 secunde
+MergeSort: CORECT- Timpul de rulare: 118.702747000 secunde
+RadixSort LSD (baza 10): CORECT- Timpul de rulare: 18.072048000 secunde
+RadixSort LSD (baza 256): CORECT- Timpul de rulare: 5.870704000 secunde
+RadixSort LSD (baza 1024): CORECT- Timpul de rulare: 6.492824000 secunde
+RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: 6.790943000 secunde
+ShellSort (Donald Shell): CORECT- Timpul de rulare: 129.503277000 secunde
+ShellSort (Marcin Ciura): CORECT- Timpul de rulare: 72.092501000 secunde
+ShellSort (Hibbard): CORECT- Timpul de rulare: 123.857607000 secunde
+ShellSort (Tokuda): CORECT- Timpul de rulare: 124.128451000 secunde
+ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: 49.699244000 secunde
+BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul
+De fapt dureaza ani sa faca sortarea
