@@ -13,7 +13,7 @@ void random(int n, int maxx, vector<int> & v)
     int randomnumber;
     for(int i = 0; i < n; i++)
     {   randomnumber = rand()*rand()% maxx;
-        v.push_back(randomnumber);
+        v.push_back(randomnumber + 1);
     }
 }
 
@@ -274,12 +274,14 @@ void BubbleSort(vector<int> &arr)
 
 int main() {
     ifstream f("input.txt");
+    ofstream g("output.txt");
     int N,n,maxx,i,j;
     vector <int> v, vec;
     f >> N;
     for(i = 0; i < N; i++)
     {   f >> n >> maxx;
         cout << "TEST " << i + 1 << " :n = " << n << " maxx = " << maxx << '\n';
+        g << "TEST " << i + 1 << " :n = " << n << " maxx = " << maxx << '\n';
         random(n, maxx, v);
         if (n > 100000000)
             cout << "Sortarea din STL: Nu exista suficienta memorie pentru a aloca vectorul";
@@ -292,9 +294,13 @@ int main() {
             auto stop = high_resolution_clock::now();
             auto duration = duration_cast<microseconds>(stop - start);
             if (test(vec, n) == true)
-                cout << "Sortarea din STL: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "Sortarea din STL: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g<< "Sortarea din STL: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "Sortare din STL nu a sortat bine" << '\n';
         }
@@ -309,9 +315,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "HeapSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "HeapSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "HeapSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "HeapSort nu a sortat bine" << '\n';
         }
@@ -326,9 +336,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "MergeSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "MergeSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "MergeSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "MergeSort nu a sortat bine" << '\n';
         }
@@ -343,9 +357,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "RadixSort LSD (baza 10): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "RadixSort LSD (baza 10): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "RadixSort LSD (baza 10): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "RadixSort LSD (baza 10) nu a sortat bine" << '\n';
         }
@@ -360,9 +378,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "RadixSort LSD (baza 256): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "RadixSort LSD (baza 256): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "RadixSort LSD (baza 256): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "RadixSort LSD (baza 256) nu a sortat bine" << '\n';
         }
@@ -377,9 +399,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "RadixSort LSD (baza 1024): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "RadixSort LSD (baza 1024): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "RadixSort LSD (baza 1024): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "RadixSort LSD (baza 1024) nu a sortat bine" << '\n';
         }
@@ -394,9 +420,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "RadixSort LSD (baza 2^16): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "RadixSort LSD (baza 2^16) nu a sortat bine" << '\n';
         }
@@ -411,9 +441,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "ShellSort (Donald Shell): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "ShellSort (Donald Shell): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "ShellSort (Donald Shell): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "ShellSort (Donald Shell) nu a sortat bine" << '\n';
         }
@@ -428,9 +462,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "ShellSort (Marcin Ciura): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "ShellSort (Marcin Ciura): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "ShellSort (Marcin Ciura): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "ShellSort (Marcin Ciura) nu a sortat bine" << '\n';
         }
@@ -445,9 +483,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "ShellSort (Hibbard): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "ShellSort (Hibbard): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "ShellSort (Hibbard): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "ShellSort (Hibbard) nu a sortat bine" << '\n';
         }
@@ -462,9 +504,13 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "ShellSort (Tokuda): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "ShellSort (Tokuda): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "ShellSort (Tokuda): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "ShellSort (Tokuda) nu a sortat bine" << '\n';
         }
@@ -479,15 +525,22 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "ShellSort (Sedgewick - 1982): CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "ShellSort (Sedgewick - 1982) nu a sortat bine" << '\n';
         }
         if(n >100000)
-            cout<<"BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul"<<'\n'
+        {   cout<<"BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul"<<'\n'
             <<"De fapt dureaza ani sa faca sortarea"<<'\n';
+            g << "BubbleSort: Nu exista suficienta memorie pentru a aloca vectorul"<<'\n'
+            <<"De fapt dureaza ani sa faca sortarea"<<'\n';
+        }
         else
         {   vec.clear();
             for (int j = 0; j < n; j++)
@@ -497,14 +550,21 @@ int main() {
             auto stop1 = high_resolution_clock::now();
             auto duration1 = duration_cast<microseconds>(stop1 - start1);
             if (test(vec, n) == true)
-                cout << "BubbleSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+            {   cout << "BubbleSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
                 << fixed << duration1.count() / 1000000.00000000000000
                      << " secunde" << '\n';
+                g << "BubbleSort: CORECT- Timpul de rulare: " << setprecision(9) << showpoint
+                << fixed << duration1.count() / 1000000.00000000000000
+                     << " secunde" << '\n';
+            }
             else
                 cout << "BubbleSort nu a sortat bine" << '\n';
         }
         vec.clear();
         v.clear();
+        cout << '\n';
+        g << '\n';
     }
+    g.close();
     return 0;
 }
